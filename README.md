@@ -1,8 +1,8 @@
 # Basis_Assignment✨
-Assignment given by Basis
+Assignment given by Basis Company
 
-![Green and Cream Modern Sales Marketing Presentation](https://user-images.githubusercontent.com/86509987/150291229-f3412fc2-d84a-44aa-a6a4-7b1215c45879.png)
-
+<!-- ![Green and Cream Modern Sales Marketing Presentation](https://user-images.githubusercontent.com/86509987/150291229-f3412fc2-d84a-44aa-a6a4-7b1215c45879.png)
+ -->
 
 # Click On Demo✨
   <code>
