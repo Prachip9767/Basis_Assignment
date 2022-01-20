@@ -1,11 +1,11 @@
-package com.app.basis_assignment.remote.response
+package com.app.basis_assignment.remote.data
 
 
 import com.google.gson.annotations.SerializedName
 
-data class Data(
+open class Data(
     @SerializedName("id")
-    val id: String,
+    var id: String,
     @SerializedName("text")
     val text: String
 )

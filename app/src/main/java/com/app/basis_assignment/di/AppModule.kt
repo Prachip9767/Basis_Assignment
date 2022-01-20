@@ -1,30 +1,27 @@
 package com.app.basis_assignment.di
 
 
-import com.google.gson.Gson
-import com.google.gson.GsonBuilder
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import okhttp3.OkHttpClient
 import retrofit2.Retrofit
-import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.converter.scalars.ScalarsConverterFactory
-import java.util.concurrent.TimeUnit
 import javax.inject.Singleton
-
+import com.google.gson.GsonBuilder
+import com.google.gson.Gson
+import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
+import retrofit2.converter.scalars.ScalarsConverterFactory
 
 
 @Module
 @InstallIn(SingletonComponent::class)
-object MovieModule {
+object AppModule {
 
 
     @Singleton
     @Provides
-    fun ProvidesApiService(): Retrofit {
+     fun providesDataFromApi(): Retrofit {
 
         return Retrofit.Builder()
             .baseUrl("https://git.io/")
