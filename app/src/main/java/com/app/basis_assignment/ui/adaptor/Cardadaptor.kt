@@ -37,7 +37,7 @@ class AppViewHolder(
 
 
     fun setData(data: Data) {
-        itemLayoutBinding.tvId.text = data.text
+        itemLayoutBinding.tvid.text = data.text
         itemLayoutBinding.tvText.text = data.id
     }
 
