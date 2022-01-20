@@ -10,18 +10,18 @@ import com.app.basis_assignment.remote.response.Data
 
 class CardAdapter(
     val resultModelList: List<Data>,
-) : RecyclerView.Adapter<NewMoviesViewHolder>() {
+) : RecyclerView.Adapter<AppViewHolder>() {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewMoviesViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AppViewHolder {
         val itemLayoutBinding: ItemLayoutBinding =
             DataBindingUtil.inflate(
                 LayoutInflater.from(parent.context),
                 R.layout.item_layout, parent, false
             )
-        return NewMoviesViewHolder(itemLayoutBinding)
+        return AppViewHolder(itemLayoutBinding)
     }
 
-    override fun onBindViewHolder(holder: NewMoviesViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: AppViewHolder, position: Int) {
         val resultModel = resultModelList[position]
         holder.setData(resultModel)
 
@@ -33,7 +33,7 @@ class CardAdapter(
     }
 }
 
-class NewMoviesViewHolder(
+class AppViewHolder(
     val itemLayoutBinding: ItemLayoutBinding,
 ) :
     RecyclerView.ViewHolder(itemLayoutBinding.root) {
